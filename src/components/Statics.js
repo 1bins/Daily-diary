@@ -10,7 +10,7 @@ const Statics = ({ monthlyList, activeMonth }) => {
     return (
         <article id="statics">
             <div className="statics-inner">
-                <h4>이번 달 나의 <b>긍정 감정 점수</b>는... {calculateEmotion ? `${calculateEmotion}%` : "아직 일기가 없네요🥲"}</h4>
+                <h4>이번 달 나의 <b>긍정 감정 점수</b>는... {monthlyList.length >= 1 ? `${calculateEmotion}%` : "아직 일기가 없네요🥲"}</h4>
                 <div className="graph">
                     <span style={{width: `${calculateEmotion ? calculateEmotion : "0"}%`}}></span>
                 </div>

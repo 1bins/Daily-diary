@@ -367,7 +367,7 @@ header .left-btn {
 @media screen and (max-width: 450px){
   /* =========== COMMON 
   ========================== */
-  main {width: 100%;}
+  main {width: 100%; overflow-x: hidden;}
   /* ======= MyHeader ====== */
   header .header-text {font-size: 2rem;}
   /* ======= MyBUtton ====== */
@@ -376,7 +376,6 @@ header .left-btn {
     font-size: 1.5rem;
   }
   /* ======= INTRO ====== */
-  .intro-inner {padding: 40px 0 39px;}
   .intro-inner h3 {font-size: 3.2rem;}
   .intro-inner p {margin-top: 8px;}
   /* ======= CALENDAR ====== */

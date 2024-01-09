@@ -13,6 +13,12 @@ const MyCalendar = ({ setActiveMonth, setTabs, setCalDate }) => {
     const getActiveMonth = (activeStartDate) => {
         const newActiveMonth = moment(activeStartDate).format('YYYY-MM');
         setActiveMonth(newActiveMonth);
+
+        if(newActiveMonth === moment(new Date()).format('YYYY-MM')){
+            setCalDate(new Date());
+        }else{
+            setCalDate(activeStartDate);
+        }
     };
     const addContent = ({ date }) => {
         if(diaryList.find((elem) => momentFormat(date) === momentFormat(elem.date))){
