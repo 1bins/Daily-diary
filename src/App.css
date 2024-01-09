@@ -1,38 +1,389 @@
-.App {
+@charset "utf-8";
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ========================================== RESET */
+body {overflow-x: hidden; font-family: 'omyu_pretty', sans-serif; line-height: 1; color: #606060; letter-spacing: -0.02rem;}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol {list-style: none;}
+hr {display: none;}
+h1 {margin: 0;}
+a {text-decoration: none;}
+b {font-weight: 700;}
+button {border: none; background: none; cursor: pointer;}
+img {border: none; -webkit-user-drag: none;}
+html {font-size: 0.625em;}
+.clear:after {content: ""; clear: both; display: block;}
+.blind {position: absolute; top: -9999px; left: -9999px;}
+input, textarea, select, button {
+    font-family: 'omyu_pretty', sans-serif;
+    appearance: none;
+    -webkit-appearance: none;
+}
+body::-webkit-scrollbar {width: 10px;}
+body::-webkit-scrollbar-track-piece {background-color: #fff;}
+body::-webkit-scrollbar-thumb {
+    background-color: #d5d5d5;
+    border-radius: 6px;
+}
+body::-webkit-scrollbar-thumb:hover {background-color: #c6c6c6;}
+main {
+    min-height: 100vh;
+}
+.hide {visibility: hidden;}
+.hidden {transform: scale(0);}
+:root {
+  --emotion1: #8ec1d9;
+  --emotion2: #a5e7e0;
+  --emotion3: #fdce17;
+  --emotion4: #fd8446;
+  --emotion5: #fd565f;
+  --default: #8897df;
+}
+
+/* ======================
+  PC
+========================= */
+/* =========== COMMON 
+========================== */
+main {
+  width: 490px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background: #eff1f8;
+}
+/* ======= MyHeader ====== */
+header {
+  position: relative;
+  padding: 16px 0 15px;
+  margin-bottom: 53px;
+  background: var(--default);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header.view {background: #88afdf;}
+header .header-text {
+  font-size: 2.4rem; color: #fff;
+  letter-spacing: -0.04rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header .left-btn {
+  position: absolute;
+  top: 50%; left: 17px; transform: translateY(-50%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ======= MyBUtton ====== */
+.common_btn {
+  width: 103px; height: 40px;
+  font-size: 1.8rem; color: #fff;
+  border-radius: 6px;
+  background: var(--default);
+}
+.common_btn.cancel {background: #666;}
+.common_btn.remove {background: var(--emotion5);}
+.common_btn.modi {background: #666;}
+.common_btn.home {
+  width: 102px; height: 36px;
+  font-size: 1.6rem;
+}
+.common_btn.header {
+  width: 83px; height: 32px;
+  font-size: 1.6rem;
+  background: rgba(255,255,255, .2);
+}
+.cf-btn-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+/* =========== HOME 
+========================== */
+/* ======= INTRO ====== */
+.intro-inner {
+  padding: 61px 0 54px;
+  text-align: center;
+  background: #f8f9fe;
+}
+.intro-inner h3 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+}
+.intro-inner p {
+  display: inline-block;
+  position: relative;
+  margin-top: 14px;
+  font-size: 1.6rem;
+  z-index: 2;
+}
+.intro-inner p:after {
+  position: absolute;
+  content: '';
+  bottom: -2px; left: 50%; transform: translateX(-50%);
+  width: 104%; height: 9px;
+  background: rgba(109, 123, 191, .2);
+  z-index: -1;
+}
+/* ======= CALENDAR ====== */
+/* === HEADER === */
+.cal-inner .react-calendar__navigation {
+  position: relative;
+  padding: 12px 0 13px;
+  text-align: center;
+  background: var(--default);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.cal-inner .react-calendar__navigation button {vertical-align: middle;}
+.cal-inner .react-calendar__navigation__label {font-size: 2rem; color: #fff;}
+.cal-inner .react-calendar__navigation__arrow {
+  position: absolute;
+  top: 50%; transform: translateY(-50%); left: 120px;
+  width: 20px; height: 20px;
+  text-indent: -9999px;
+  background: url(/public/images/circle-chevron-left-solid.svg) no-repeat center/contain;
+}
+.cal-inner .react-calendar__navigation__next-button {
+    left: auto; right: 120px;
+    transform: translateY(-50%) scaleX(-1);
+}
+/* === BODY === */
+.cal-inner .react-calendar__viewContainer {
+  padding: 0 0 10px;
+  background: #fff;
+}
+.cal-inner .react-calendar__month-view__weekdays__weekday {
+  padding: 19px 0 17px;
+  height: 48px;
+  font-size: 1.6rem; color: #616992;
+  text-align: center;
+}
+.cal-inner .react-calendar__month-view__weekdays__weekday abbr[title] {text-decoration: none;}
+.cal-inner .react-calendar__month-view__days__day {
+  position: relative;
+  padding: 12px 0 20px;
+  font-size: 1.6rem; color: #6a6a6a;
+  z-index: 2;
+}
+.cal-inner :is(.react-calendar__tile--now, .react-calendar__tile--active) {color: #fff;}
+.cal-inner .react-calendar__tile--now:after, .cal-inner .react-calendar__tile--active:after {
+  position: absolute;
+  content: '';
+  top: 5px; left: 50%; transform: translateX(-50%);
+  width: 32px; height: 32px;
+  background: #c3cbef;
+  border-radius: 100%;
+  z-index: -1;
+}
+.cal-inner .react-calendar__tile--active:after {background: #88afdf;}
+.cal-inner .react-calendar__month-view__days__day .dot {
+  position: absolute;
+  bottom: 5px; left: 50%; transform: translateX(-50%);
+  width: 6px; height: 6px;
+  border-radius: 100%;
+  background: var(--emotion1);
+}
+.cal-inner .react-calendar__month-view__days__day .dot_emotion2 {background: var(--emotion2);}
+.cal-inner .react-calendar__month-view__days__day .dot_emotion3 {background: var(--emotion3);}
+.cal-inner .react-calendar__month-view__days__day .dot_emotion4 {background: var(--emotion4);}
+.cal-inner .react-calendar__month-view__days__day .dot_emotion5 {background: var(--emotion5);}
+
+/* ======= ITEMS ====== */
+.items-inner {
+  padding: 29px 17px 0;
+}
+.items-inner .btn-box {margin-bottom: 22px;}
+.items-inner .btn-box button {
+  width: 52px; height: 32px;
+  font-size: 1.6rem; color: #999;
+  background: #fff;
+  border-radius: 6px;
+}
+.items-inner .btn-box button:last-child {margin-left: 6px;}
+.items-inner .btn-box button.active {
+  color: #fff;
+  background: var(--default);
+}
+.items-inner .none-item {
+  padding: 41px 0 40px;
+  text-align: center;
+  background: rgba(255,255,255,.8);
+  border-radius: 12px;
+}
+.items-inner .none-item img {width: 64px;}
+.items-inner .none-item .alert {
+  margin: 17px 0 18px;
+  font-size: 2.8rem; color: #aaa;
+}
+.items-inner .none-item .alert span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.items-inner .item {
+  display: flex;
+  height: 78px;
+  background: rgba(255,255,255,.8);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.items-inner .item:nth-child(n+2) {margin-top: 12px;}
+.items-inner .item .emotion {
+  display: flex;
+  width: 60px;
+  background: var(--emotion1);
+  justify-content: center;
+  align-items: center;
+}
+.items-inner .item .emotion.emotion2 {background: var(--emotion2);}
+.items-inner .item .emotion.emotion3 {background: var(--emotion3);}
+.items-inner .item .emotion.emotion4 {background: var(--emotion4);}
+.items-inner .item .emotion.emotion5 {background: var(--emotion5);}
+.items-inner .item .emotion img {width: 44px;}
+.items-inner .item .content-box {
+  width: calc(100% - 60px);
+  padding: 20px 23px 0;
+}
+.items-inner .item .content-box .date {font-size: 1.5rem; color: #aaaaaa;}
+.items-inner .item .content-box .content {
+  margin-top: 4px;
+  font-size: 1.8rem; color: #756f6f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.App-link {
-  color: #61dafb;
+/* ======= STATICS ====== */
+.statics-inner {
+  margin-top: 41px;
+  padding: 29px 17px 30px;
+  text-align: center;
+  background: #f8f9fe;
+}
+.statics-inner h4 {
+  margin-bottom: 11px;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+}
+.statics-inner h4 b {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+.statics-inner h4 b:after {
+  position: absolute;
+  content: '';
+  bottom: -3px; left: 50%; transform: translateX(-50%);
+  width: 104%; height: 13px;
+  background: var(--default);
+  opacity: 0.2;
+  z-index: -1;
+}
+.statics-inner .graph {
+  position: relative;
+  height: 16px;
+  border: 1px solid var(--default);
+  background: #fff;
+  border-radius: 4px;
+}
+.statics-inner .graph span {
+  position: absolute;
+  top: 0; left: 0;
+  width: 76%; height: 100%;
+  background: var(--default);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* =========== EDITOR 
+========================== */
+.edit-inner {padding: 0 17px;}
+.edit-inner > article:nth-child(n+2) {margin-top: 39px;}
+.edit-inner .edit-co-inner h4 {
+  margin-bottom: 16px;
+  font-size: 2rem; color: #565656;
+  font-weight: 400;
+}
+.edit-inner .edit-co-inner .emotion-items {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-inner .edit-co-inner .emotion-item {
+  padding: 12px 0;
+  width: 17.543%; height: 80px;
+  background: #fff;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all .5s;
+}
+.edit-inner .edit-co-inner .emotion-item img {width: 34px;}
+.edit-inner .edit-co-inner .emotion-item p {
+  margin-top: 4px;
+  font-size: 1.6rem;
+}
+.edit-inner .edit-co-inner .emotion-item.emotion-item1 {background: var(--emotion1);}
+.edit-inner .edit-co-inner .emotion-item.emotion-item2 {background: var(--emotion2);}
+.edit-inner .edit-co-inner .emotion-item.emotion-item3 {background: var(--emotion3);}
+.edit-inner .edit-co-inner .emotion-item.emotion-item4 {background: var(--emotion4);}
+.edit-inner .edit-co-inner .emotion-item.emotion-item5 {background: var(--emotion5);}
+.edit-inner .edit-co-inner .emotion-item.emotion-active {
+  color: #fff;
+  box-shadow: 0px 0px 8.2px 1.8px rgba(0, 0, 0, 0.06);
+}
+.edit-inner .edit-co-inner textarea {
+  padding: 19px 18px;
+  width: 100%; height: 360px;
+  font-size: 1.7rem; color: #7b7b7b;
+  border-radius: 6px;
+  border: none;
+  resize: none;
+  overflow-y: auto;
+  outline: none;
+}
+.edit-inner .edit-co-inner textarea::placeholder {color: #a6a6a6;}
+
+/* =========== VIEW 
+========================== */
+.view-inner .edit-co-inner .emotion-item {
+  padding: 20px 0 28px;
+  width: 100%; height: auto;
+  cursor: default;
+}
+.view-inner .edit-co-inner .emotion-item img {width: 51px;}
+.view-inner .edit-co-inner .emotion-item p {font-size: 1.8rem;}
+.view-inner .edit-co-inner .content-wrap {
+  padding: 19px 18px;
+  width: 100%; height: 360px;
+  font-size: 1.7rem; color: #7b7b7b;
+  border-radius: 6px;
+  background: #fff;
+}
+.view-inner .edit-co-inner .content-wrap p {line-height: 22px;}
+
+/* ======================
+  MOBILE
+========================= */
+@media screen and (max-width: 450px){
+  /* =========== COMMON 
+  ========================== */
+  main {width: 100%;}
+  /* ======= MyHeader ====== */
+  header .header-text {font-size: 2rem;}
+  /* ======= MyBUtton ====== */
+  .common_btn.header {
+    width: 72px; height: 28px;
+    font-size: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  /* ======= INTRO ====== */
+  .intro-inner {padding: 40px 0 39px;}
+  .intro-inner h3 {font-size: 3.2rem;}
+  .intro-inner p {margin-top: 8px;}
+  /* ======= CALENDAR ====== */
+  .cal-inner {padding: 0 10px;}
+  /* === HEADER === */
+  .cal-inner .react-calendar__navigation__arrow {left: 45px;}
+  .cal-inner .react-calendar__navigation__next-button {left: auto; right: 45px;}
+  .items-inner {padding: 29px 12px 0;}
+  .edit-inner {padding: 0 12px;}
 }
