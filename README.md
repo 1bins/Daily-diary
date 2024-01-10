@@ -1,1 +1,1 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=%ED%95%98%EB%A3%A8%20%ED%95%98%EB%82%98,%20%EA%B0%90%EC%A0%95%20%EC%9D%BC%EA%B8%B0%EC%9E%A5&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%EC%98%A4%EB%8A%98%20%EC%9E%88%EC%97%88%EB%8D%98%20%EC%9D%BC%EC%9D%84%20%EA%B0%90%EC%A0%95%EC%9D%BC%EA%B8%B0%EC%9E%A5%EC%97%90%20%ED%9B%8C%ED%9B%8C%20%ED%84%B8%EC%96%B4%EB%B2%84%EB%A0%A4%EC%9A%94!&descAlignY=51&descAlign=62" />
+
