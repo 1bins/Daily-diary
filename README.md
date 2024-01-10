@@ -1,11 +1,10 @@
-<img src="https://raw.githubusercontent.com/1bins/images/master/haruDiary/intro.png" />
+<img src="https://raw.githubusercontent.com/1bins/images/master/haruDiary/intro.png">
 <br/><br/>
 
 ## 사용한 기술
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
-
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white>
-
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">
+<p align="left">
+  <img src="https://camo.githubusercontent.com/5d01ff32c8ff69d52e2e19e6f2d6c3dec2565398ab6a49d85451f46726224614/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d3631444146423f6c6f676f3d7265616374266c6f676f436f6c6f723d7768697465" height="24px">
+  <img src="https://camo.githubusercontent.com/64e3ed535b90fafa087dab829106804d76bd80a40ac55a542a4a51ff5dd440fa/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666c6174266c6f676f3d48544d4c35266c6f676f436f6c6f723d7768697465" height="24px">
+  <img src="https://camo.githubusercontent.com/d6bf556d08b49b7bdeca54eaae43675eec1a6249b9f9ab589ed7b8c6393e182d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3135373242363f7374796c653d666c6174266c6f676f3d43535333266c6f676f436f6c6f723d7768697465" height="24px">
+  <img src="https://camo.githubusercontent.com/a7eb481788fac742d0221a66cc189ac35c808e5389c353c8e5296c91cee336ce/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d4637444631453f7374796c653d666c6174266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d7768697465" height="24px">
+</p>
