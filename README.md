@@ -18,7 +18,7 @@
 
 ### 오늘 하루의 기분과 일기를 작성할 수 있어요
 <img src="https://private-user-images.githubusercontent.com/144764686/295383593-192a1daa-7799-4ebb-9f5f-802e85c1ac23.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQ4NTAwNTEsIm5iZiI6MTcwNDg0OTc1MSwicGF0aCI6Ii8xNDQ3NjQ2ODYvMjk1MzgzNTkzLTE5MmExZGFhLTc3OTktNGViYi05ZjVmLTgwMmU4NWMxYWMyMy5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMTEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDExMFQwMTIyMzFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNDc2ZGQ1ODIyMzI3ZTc3NTE0Nzg4NzIzNDRkN2Q4OTBiNDhmM2YwMTBkYTI0YTMxM2I2MDM1ODJlNDYxMWUyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.1BuOhWl9w6qkpKeffTU0qmz-TyaUgD4W6qcu-b2Lbp4">
-<blockquote>오늘 일기 작성한 일기가 없을 경우 일기 쓰기 버튼이 활성화돼요.<br>
+<blockquote>오늘 작성한 일기가 없을 경우 일기 쓰기 버튼이 활성화돼요.<br>
 작성한 일기가 있다면 해당 일기 아이템이 노출돼요.</blockquote>
 
 ### 작성된 일기가 있는 날에는 달력에 표시가 돼요
