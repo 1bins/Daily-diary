@@ -14,6 +14,9 @@
   <img src="https://camo.githubusercontent.com/d6bf556d08b49b7bdeca54eaae43675eec1a6249b9f9ab589ed7b8c6393e182d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f435353332d3135373242363f7374796c653d666c6174266c6f676f3d43535333266c6f676f436f6c6f723d7768697465" height="24px">
   <img src="https://camo.githubusercontent.com/a7eb481788fac742d0221a66cc189ac35c808e5389c353c8e5296c91cee336ce/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6a6176617363726970742d4637444631453f7374796c653d666c6174266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d7768697465" height="24px">
 </p>
+- react-calendar: https://github.com/wojtekmaj/react-calendar<br>
+- moment: https://www.npmjs.com/package/react-moment<br>
+- react-router-dom: https://reactrouter.com/en/main
 <br/>
 
 ### 오늘 하루의 기분과 일기를 작성할 수 있어요
